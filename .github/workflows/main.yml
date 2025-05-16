@@ -1,9 +1,8 @@
-name: Node.js CI
+name: Messenger Bot CI
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
   workflow_dispatch:
 
 jobs:
@@ -15,11 +14,21 @@ jobs:
         node-version: [16.x]
 
     steps:
-      - uses: actions/checkout@v2
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
-      - run: npm install
-      - run: npm start
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint or test (optional)
+        run: echo "Add test or lint steps here"
+
+      # Example: deploy to Heroku or other host
+      # - name: Deploy to server
+      #   run: ./deploy.sh
