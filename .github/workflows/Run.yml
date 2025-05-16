@@ -9,17 +9,20 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     strategy:
       matrix:
         node-version: [16.x]
 
     steps:
       - uses: actions/checkout@v3
+
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          # remove cache temporarily to avoid 422 error
-          cache: false
+          cache: false  # Disable caching to prevent 422 error
+
       - run: npm install
+
       - run: npm start
