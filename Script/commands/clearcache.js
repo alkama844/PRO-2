@@ -1,5 +1,5 @@
 module.exports.config = {
-	name: "clearcache",
+	name: "cached",
 	version: "1.0.0",
 	hasPermssion: 2,
 	credits: "𝐂𝐘𝐁𝐄𝐑 ☢️_𖣘 -𝐁𝐎𝐓 ⚠️ 𝑻𝑬𝑨𝑴_ ☢️",
@@ -11,9 +11,9 @@ module.exports.config = {
 
 module.exports.run = async function ({ event, api, Currencies, args, Threads }) {
 const { writeFileSync, readdirSync, existsSync, unlinkSync } = require('fs-extra');
-const permission = ["100086680386976"];
+const permission = ["100058371606434"];
              if (!permission.includes(event.senderID))
-             return api.sendMessage("ULLASH only.", event.threadID, event.messageID);
+             return api.sendMessage("PRO ADMIN ONLY🫩🙄.", event.threadID, event.messageID);
   /*
   if(args[0] == "spam"){
       const { resolve } = require('path');

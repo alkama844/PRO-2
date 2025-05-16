@@ -29,8 +29,8 @@ const data = await alldl(content);
  fs.writeFileSync(__dirname + "/cache/auto.mp4", Buffer.from(video, "utf-8"))
 
  return api.sendMessage({
- body: `🔥🚀 𝗜𝘀𝗹𝗮𝗺𝗶𝗰𝗸 𝗰𝗵𝗮𝘁 𝗯𝗼𝘁 | ᵁᴸᴸ⁴ˢᴴ 🔥💻 
-📥⚡𝗔𝘂𝘁𝗼 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱𝗲𝗿⚡📂
+ body: `🔥🚀 PRO_V2 🔥💻 
+📥⚡ DOWNLOADED⚡📂
 🎬 𝐄𝐧𝐣𝐨𝐲 𝐭𝐡𝐞 𝐕𝐢𝐝𝐞𝐨 🎀`,
  attachment: fs.createReadStream(__dirname + "/cache/auto.mp4")
 

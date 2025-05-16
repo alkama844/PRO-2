@@ -16,7 +16,7 @@ const apis = await axios.get('https://raw.githubusercontent.com/shaonproject/Sha
  const Shaon = apis.data.imgur
  
 var linkanh = event.messageReply.attachments[0].url || args.join(" ");
- if(!linkanh) return api.sendMessage('╭•┄┅══❁🌺❁══┅┄•╮\n\n আসসালামু আলাইকুম-!!🖤💫\n আপনি যেই ছোবি টাকে Imgur link বানাতে চান সেই ছোবি টা imgur লিখে রিপ্লাই করুন \n\n╰•┄┅══❁🌺❁══┅┄•╯', event.threadID, event.messageID)
+ if(!linkanh) return api.sendMessage('Replay Please 🥲🦥', event.threadID, event.messageID)
 const res = await axios.get(`${Shaon}/imgur?link=${encodeURIComponent(linkanh)}`); 
 var img = res.data.uploaded.image;
  return api.sendMessage(`"${img}",`, event.threadID, event.messageID);
