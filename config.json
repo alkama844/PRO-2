@@ -8,23 +8,25 @@
     "allowInbox": false,
     "autoClean": true,
     "commandDisabled": [
-        "sim.js"
+        ""
     ],
     "eventDisabled": [
-        "join.js"
+        ""
     ],
     "EMAIL": "",
     "PASSWORD": "",
     "OTPKEY": "",
-    "BOTNAME": "𝐂𝐘𝐁𝐄𝐑 ☢️_𖣘 -𝐁𝐎𝐓 ⚠️",
-    "PREFIX": "/",
+    "BOTNAME": "Sizuka 🍼",
+    "PREFIX": ".",
     "ADMINBOT": [
-        "100086680386976",
-        "100063460095373",
-        "61550035211214"
+        "100058371606434",
+        "100076392488331",
+        "100058371606434"
     ],
     "NDH": [
-        "100082395531611"
+        "100058371606434",
+        "100076392488331",
+        "100058371606434"
     ],
     "DATABASE": {
         "sqlite": {
